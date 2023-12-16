@@ -20,6 +20,24 @@
      <MSGNR>001</MSGNR>
      <TEXT>Connection &amp;1 &amp;2 does not exist</TEXT>
     </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJ33133_EXCEPTIONS</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Flight number &amp;1 &amp;2 already exists</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJ33133_EXCEPTIONS</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Airline &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZJ33133_EXCEPTIONS</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Departure and destination airport must not be the same</TEXT>
+    </T100>
    </T100>
   </asx:values>
  </asx:abap>

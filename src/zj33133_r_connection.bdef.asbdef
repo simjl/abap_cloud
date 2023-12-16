@@ -22,6 +22,13 @@ authorization master( global )
    UUID;
 
 
+  field ( readonly )
+    CityFrom,
+    CountryFrom,
+    CityTo,
+    CountryTo;
+
+
   create;
   update;
   delete;
@@ -31,6 +38,11 @@ authorization master( global )
   draft action Discard;
   draft action Resume;
   draft determine action Prepare;
+
+  validation CheckSemanticKey on save { create; update; }
+  validation CheckCerrierID on save { create; field CarrierID; }
+  validation CheckOriginDestination on save { create; field AirportFromID, AirportToID; }
+  determination GetCities on save { field airportFromID, AirportToID; }
 
   mapping for ZJ33133ACONN
   {
